@@ -1,8 +1,38 @@
-# React + Vite
+# Password Manager (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple password manager built with **React** and **Vite**. This app allows users to store and manage passwords securely in the browser using `localStorage`. Passwords are encrypted before being saved, ensuring privacy and security at a basic level.
 
-Currently, two official plugins are available:
+### Features
+- **Add and Edit Passwords**: Easily add and update login credentials for various services.
+- **Encrypted Storage**: Passwords are encrypted before being stored in `localStorage` using **AES encryption** to protect sensitive data.
+- **Password List View**: View saved passwords with decryption on demand, displaying the actual password.
+- **Responsive UI**: Optimized for both desktop and mobile devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast and modern build tool for development.
+- **CryptoJS**: A library used to encrypt and decrypt passwords with **AES** (Advanced Encryption Standard).
+- **localStorage**: Web API to store data locally in the browser.
+
+### Security Considerations
+This project demonstrates basic password management functionality, but it is **not secure enough for real-world use**:
+- **localStorage** is not a secure solution for storing sensitive data. It is susceptible to cross-site scripting (XSS) attacks.
+- Passwords are encrypted, but **localStorage** is still accessible to any script running on the same domain.
+
+For production applications, consider:
+- Storing passwords in a more secure, server-side solution.
+- Using more advanced techniques such as hashing and salting for passwords.
+- Implementing authentication and encryption using libraries like **bcrypt**, **JWT**, or server-side key management.
+
+### Getting Started
+
+To run this project locally, follow these steps:
+
+#### Prerequisites
+- [Node.js](https://nodejs.org/en/) (v14 or later)
+- [npm](https://www.npmjs.com/) (v6 or later)
+
+#### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/password-manager.git
+cd password-manager
