@@ -4,14 +4,12 @@ A simple password manager built with **React** and **Vite**. This app allows use
 
 ### Features
 - **Add and Edit Passwords**: Easily add and update login credentials for various services.
-- **Encrypted Storage**: Passwords are encrypted before being stored in `localStorage` using **AES encryption** to protect sensitive data.
 - **Password List View**: View saved passwords with decryption on demand, displaying the actual password.
 - **Responsive UI**: Optimized for both desktop and mobile devices.
 
 ### Technologies Used
 - **React**: A JavaScript library for building user interfaces.
 - **Vite**: A fast and modern build tool for development.
-- **CryptoJS**: A library used to encrypt and decrypt passwords with **AES** (Advanced Encryption Standard).
 - **localStorage**: Web API to store data locally in the browser.
 
 ### Security Considerations
